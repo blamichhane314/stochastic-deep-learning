@@ -20,7 +20,7 @@
 
   document.getElementById("app").innerHTML=
     '<div class="netbar" id="netbar">'+
-      '<a class="home" href="index.html">← Timeline</a>'+
+      '<a class="home" href="index.html">← Namche</a>'+
       '<span class="grp">'+VIEWS.map(function(v,i){
         return '<button type="button" class="mbtn" data-v="'+v[0]+'" aria-pressed="'+(i===0)+'">'+
           v[1]+'</button>'; }).join("")+'</span>'+
