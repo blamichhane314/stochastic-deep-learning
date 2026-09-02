@@ -9270,24 +9270,6 @@
    "method": "manual",
    "confidence": "confirmed",
    "summary": "",
-   "id": "w-rezende2015-icml2015",
-   "title": "Variational Inference with Normalizing Flows",
-   "speaker": "Danilo Jimenez Rezende",
-   "venue": "ICML 2015, Lille",
-   "year": 2015,
-   "channel": "VideoLectures.NET",
-   "url": "https://videolectures.net/icml2015_jimenez_rezende_normalizing_flows/",
-   "attaches_to": [
-    "rezende2015",
-    "normalizing-flow"
-   ]
-  },
-  {
-   "kind": "watch",
-   "is_author": true,
-   "method": "manual",
-   "confidence": "confirmed",
-   "summary": "",
    "id": "w-goodfellow2014-iccv17",
    "title": "Tutorial on Generative adversarial networks - Introduction",
    "speaker": "Ian Goodfellow",
