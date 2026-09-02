@@ -68,7 +68,7 @@
         '<span style="position:absolute;inset:4px;border-radius:50%;background:'+c[1]+'"></span>'+
         '</button>'; }).join("");
     document.body.appendChild(d);
-    var cur=document.documentElement.getAttribute("data-scheme")||"survey";
+    var cur=document.documentElement.getAttribute("data-scheme")||"cyanotype";
     [].forEach.call(d.querySelectorAll("button"),function(b){
       b.setAttribute("aria-pressed",String(b.dataset.s===cur));
       b.addEventListener("click",function(){
@@ -109,6 +109,29 @@
     return e.kind === "paper-paper" && e.from === pid; }); };
   A.citedBy = function(pid){ return D.edges.filter(function(e){
     return e.kind === "paper-paper" && e.to === pid; }); };
+
+  /* ---- recommended resources ----
+     A talk earns its place by being the best account of the paper, so the
+     row carries only what can be checked: who speaks, where, when, and who
+     posted it. Nothing here describes what is said. */
+  A.watch = function(id){
+    return (D.resources || []).filter(function(r){
+      return r.kind === "watch" && r.attaches_to.indexOf(id) >= 0; });
+  };
+
+  A.watchBlock = function(id){
+    var list = A.watch(id); if (!list.length) return "";
+    return '<h4 class="sec">Recommended watch</h4>' + list.map(function(r){
+      var mark = r.is_author
+        ? '<span class="mark">'+(r.confidence === "confirmed" ? "author" : "author, unconfirmed")+'</span>'
+        : "";
+      var where = [r.venue, r.year].filter(Boolean).join(", ");
+      return '<div class="watch"><p class="wt"><a href="'+A.esc(r.url)+'">'+A.esc(r.title)+'</a></p>'+
+        '<p class="ws">'+A.esc(r.speaker)+mark+'</p>'+
+        (where ? '<p class="wv">'+A.esc(where)+'</p>' : "")+
+        '<p class="prov">'+A.esc(r.channel || "")+'</p></div>';
+    }).join("");
+  };
 
   A.RELORDER = ["introduces","motivated-by","extends","replaces","uses",
                 "evaluates-with","acknowledges-limitation"];

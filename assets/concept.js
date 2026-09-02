@@ -46,6 +46,7 @@
     ? '<p class="sub">Sessions '+Math.min.apply(null,span)+' to '+Math.max.apply(null,span)+
       ', across '+(new Set(span)).size+' of the ten meetings.</p>'
     : '<p class="empty">Not yet reached by any session.</p>';
+  side+=A.watchBlock(id);
   side+='<h4 class="sec">Notes</h4><p class="empty">None yet.</p>';
 
   A.mount("concepts.html", c.label,
