@@ -9419,7 +9419,7 @@
    "confidence": "confirmed",
    "summary": "",
    "event": "ipam2012-dlfl",
-   "event_order": 6,
+   "event_order": 3,
    "slot": "Mon 23 July",
    "short": "Learning Hierarchical Generative Models, Pt. 1",
    "affiliation": "University of Toronto"
@@ -9770,51 +9770,6 @@
    "summary": ""
   },
   {
-   "id": "e-ipam12-03",
-   "kind": "watch",
-   "title": "Part 3: Some Applications of Deep Learning",
-   "speaker": "Geoffrey Hinton",
-   "affiliation": "University of Toronto",
-   "channel": "Institute for Pure & Applied Mathematics (IPAM)",
-   "url": "https://www.youtube.com/watch?v=vYmclORWw5U",
-   "attaches_to": [],
-   "event": "ipam2012-dlfl",
-   "event_order": 3,
-   "slot": "Wed 11 July",
-   "method": "manual",
-   "summary": ""
-  },
-  {
-   "id": "e-ipam12-04",
-   "kind": "watch",
-   "title": "Part 4: A Computational Principle that Explains Sex, the Brain, and Sparse Coding",
-   "speaker": "Geoffrey Hinton",
-   "affiliation": "University of Toronto",
-   "channel": "Institute for Pure & Applied Mathematics (IPAM)",
-   "url": "https://www.youtube.com/watch?v=05MpycrocRI",
-   "attaches_to": [],
-   "event": "ipam2012-dlfl",
-   "event_order": 4,
-   "slot": "Wed 11 July",
-   "method": "manual",
-   "summary": ""
-  },
-  {
-   "id": "e-ipam12-05",
-   "kind": "watch",
-   "title": "Does the Brain do Inverse Graphics?",
-   "speaker": "Geoffrey Hinton",
-   "affiliation": "University of Toronto",
-   "channel": "Institute for Pure & Applied Mathematics (IPAM)",
-   "url": "https://www.youtube.com/watch?v=TFIMqt0yT2I",
-   "attaches_to": [],
-   "event": "ipam2012-dlfl",
-   "event_order": 5,
-   "slot": "Thu 12 July",
-   "method": "manual",
-   "summary": ""
-  },
-  {
    "id": "e-ipam12-07",
    "kind": "watch",
    "title": "Learning Hierarchical Generative Models, Pt. 2",
@@ -9824,7 +9779,7 @@
    "url": "https://www.youtube.com/watch?v=nODMf0AjPEs",
    "attaches_to": [],
    "event": "ipam2012-dlfl",
-   "event_order": 7,
+   "event_order": 4,
    "slot": "Mon 23 July",
    "method": "manual",
    "summary": ""
@@ -9839,7 +9794,7 @@
    "url": "https://www.youtube.com/watch?v=l0Yul3H0ki8",
    "attaches_to": [],
    "event": "ipam2012-dlfl",
-   "event_order": 8,
+   "event_order": 5,
    "slot": "Tue 24 July",
    "method": "manual",
    "summary": ""
