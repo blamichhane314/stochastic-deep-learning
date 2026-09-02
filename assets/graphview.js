@@ -491,6 +491,12 @@
     ins.forEach(function(e){ push(e.from,"paper","cited-by"); });
     if(items.length<2){ return null; }
 
+    /* which relations this particular rose ended up drawing, in the house order.
+       The key is built from this, so it never names a line the reader cannot see. */
+    var drew={}; items.forEach(function(it){ drew[it.rel]=1; });
+    var relsDrawn=A.RELORDER.concat(["relates","cites","cited-by"])
+      .filter(function(r){ return drew[r]; });
+
     /* segment gaps: before concepts, before cites, before cited-by */
     var segStart={}; segStart[0]=1;
     var nc=items.filter(function(i){return i.kind==="concept";}).length;
@@ -499,10 +505,14 @@
     if(no&&nc+no<items.length) segStart[nc+no]=1;
     var gaps=Object.keys(segStart).length;
 
-    /* every ring label runs radially, so reserve its room on all sides */
-    var LR=138, LCUT=22;
-    var W=Math.max(560,cfg.W||host.clientWidth||760);
-    var r=Math.max(96,Math.min((W-2*LR-20)/2, 130+items.length*4, 200));
+    /* Every ring label runs radially, so its room has to be reserved on all
+       sides. The rose sits in the paper page's sidebar now, not in a wide
+       column, so the reserve and the radius follow the host width rather than
+       assuming one: at 560px it draws as it always did, and it keeps shrinking
+       rather than overflowing when the column is narrower than that. */
+    var W=Math.max(380,cfg.W||host.clientWidth||760);
+    var LR=Math.max(96,Math.min(138,Math.round(W*0.27))), LCUT=LR>=118?22:16;
+    var r=Math.max(80,Math.min((W-2*LR-20)/2, 130+items.length*4, 200));
     var H=Math.round(2*(r+LR)+10);
     var cx=W/2, cy=Math.round(H/2);
 
@@ -602,6 +612,6 @@
       if(g&&(ev.key==="Enter"||ev.key===" ")){ ev.preventDefault(); open(g); }
     });
     paint(null);
-    return {svg:svg};
+    return {svg:svg, rels:relsDrawn, chords:chords.length>0};
   };
 })();

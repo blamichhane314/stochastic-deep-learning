@@ -324,12 +324,25 @@ svg.mx.focused .cell.dim .cf{ opacity:.1; }
 .egowrap{ border:1px solid var(--rule); margin-top:10px; background:var(--paper);
   overflow-x:auto; }
 svg.rose{ display:block; margin:0 auto; }
-svg.rose .sp{ fill:none; stroke:var(--route); stroke-width:1; opacity:.5; }
-svg.rose .sp.t-cites,svg.rose .sp.t-cited-by{ stroke:var(--etch); opacity:.75; }
-svg.rose .sp.t-cited-by{ stroke-dasharray:2 3; }
-svg.rose .sp.t-introduces{ stroke-width:2; opacity:.9; }
-svg.rose .sp.t-motivated-by{ stroke-dasharray:5 3; }
-svg.rose .sp.t-evaluates-with{ stroke-dasharray:1.5 3; }
+/* One line style per relation. Before this, extends, replaces, uses and
+   `relates` all fell through to the base rule and drew identically -- and uses
+   (134 edges) and extends (65) are the two commonest relations after citation,
+   so the rose was least legible exactly where it was busiest. Paper-to-paper
+   links stay --etch and paper-to-concept links stay --route, so the two halves
+   of the neighbourhood never have to be told apart by dash pattern alone.
+   The key under the rose is built from these same classes, so it cannot drift
+   from what is actually drawn. */
+svg.rose .sp{ fill:none; stroke:var(--route); stroke-width:1.3; opacity:.85; }
+svg.rose .sp.t-introduces{ stroke-width:2.4; opacity:.95; }
+svg.rose .sp.t-extends{ stroke-width:1.3; opacity:.85; }
+svg.rose .sp.t-replaces{ stroke-width:1.6; opacity:.9; stroke-dasharray:7 2.5 1 2.5; }
+svg.rose .sp.t-motivated-by{ stroke-width:1; opacity:.7; stroke-dasharray:5 3; }
+svg.rose .sp.t-uses{ stroke-width:1; opacity:.3; }
+svg.rose .sp.t-evaluates-with{ stroke-width:1; opacity:.5; stroke-dasharray:1.5 3; }
+svg.rose .sp.t-acknowledges-limitation{ stroke-width:1.8; opacity:.8; stroke-dasharray:1 3; }
+svg.rose .sp.t-relates{ stroke-width:1.4; opacity:.6; stroke-dasharray:3 3; }
+svg.rose .sp.t-cites{ stroke:var(--etch); stroke-width:1; opacity:.75; stroke-dasharray:none; }
+svg.rose .sp.t-cited-by{ stroke:var(--etch); stroke-width:1; opacity:.75; stroke-dasharray:4 2.5; }
 svg.rose .sp.hot{ opacity:1; stroke-width:2.2; }
 svg.rose.focused .sp.dim{ opacity:.12; }
 svg.rose .ch{ fill:none; stroke:var(--etch); stroke-width:.8; opacity:.25; }
@@ -345,6 +358,17 @@ svg.rose .dot{ fill:var(--route); opacity:.8; }
 svg.rose .rl{ font-family:var(--sans); font-size:11px; fill:var(--ink-soft); }
 svg.rose .ri:hover .rl,svg.rose .ri:focus-visible .rl,
 svg.rose .ri.hl .rl{ fill:var(--route); }
+
+/* ---- the rose's key ----
+   Each swatch is a real `svg.rose` carrying the same class as the spoke it
+   stands for, so the key is drawn by the stylesheet that draws the picture.
+   It lists only the relations this paper's rose actually contains. */
+.rosekey{ display:flex; flex-wrap:wrap; gap:5px 15px; margin-top:8px; align-items:center; }
+.rosekey .k{ display:inline-flex; align-items:center; gap:6px; }
+.rosekey .k svg{ display:block; flex:none; overflow:visible; }
+.rosekey .k b{ font-family:var(--sans); font-size:10.5px; font-weight:400;
+  letter-spacing:.11em; text-transform:uppercase; color:var(--ink-faint); white-space:nowrap; }
+.rosekey svg.rose .ch{ opacity:.55; stroke-width:1.1; }
 
 /* restored bipartite view, now carrying intra-column arcs */
 svg.bip2{ display:block; width:100%; min-width:640px; height:auto; }
