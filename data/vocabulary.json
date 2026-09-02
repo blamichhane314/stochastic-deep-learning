@@ -1,0 +1,914 @@
+[
+ {
+  "id": "partition-function",
+  "family": "obstruction",
+  "type": "object",
+  "aliases": [
+   "partition function",
+   "normalizing constant",
+   "normalising constant",
+   "normalization constant",
+   "intractable normaliz"
+  ]
+ },
+ {
+  "id": "energy-function",
+  "family": "obstruction",
+  "type": "object",
+  "aliases": [
+   "energy function",
+   "energy-based",
+   "energy based"
+  ]
+ },
+ {
+  "id": "boltzmann-distribution",
+  "family": "energy",
+  "type": "object",
+  "aliases": [
+   "boltzmann distribution",
+   "gibbs distribution"
+  ]
+ },
+ {
+  "id": "boltzmann-machine",
+  "family": "energy",
+  "type": "object",
+  "aliases": [
+   "boltzmann machine"
+  ]
+ },
+ {
+  "id": "restricted-boltzmann-machine",
+  "family": "energy",
+  "type": "object",
+  "aliases": [
+   "restricted boltzmann machine",
+   "RBM"
+  ]
+ },
+ {
+  "id": "deep-belief-network",
+  "family": "energy",
+  "type": "object",
+  "aliases": [
+   "deep belief net"
+  ]
+ },
+ {
+  "id": "deep-boltzmann-machine",
+  "family": "energy",
+  "type": "object",
+  "aliases": [
+   "deep boltzmann machine"
+  ]
+ },
+ {
+  "id": "contrastive-divergence",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "contrastive divergence"
+  ]
+ },
+ {
+  "id": "persistent-chain",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "persistent chain",
+   "persistent contrastive",
+   "stochastic maximum likelihood"
+  ]
+ },
+ {
+  "id": "gibbs-sampling",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "gibbs sampling",
+   "gibbs sampler"
+  ]
+ },
+ {
+  "id": "mcmc",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "markov chain monte carlo",
+   "MCMC",
+   "markov chain"
+  ]
+ },
+ {
+  "id": "positive-negative-phase",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "positive phase",
+   "negative phase",
+   "clamped and free",
+   "data-dependent expectation"
+  ]
+ },
+ {
+  "id": "greedy-layerwise-training",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "greedy layer",
+   "layer-wise",
+   "layerwise",
+   "one layer at a time"
+  ]
+ },
+ {
+  "id": "wake-sleep",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "wake-sleep",
+   "wake sleep"
+  ]
+ },
+ {
+  "id": "simulated-annealing",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "simulated annealing",
+   "annealing"
+  ]
+ },
+ {
+  "id": "mean-field-inference",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "mean-field",
+   "mean field"
+  ]
+ },
+ {
+  "id": "score-function",
+  "family": "score",
+  "type": "object",
+  "aliases": [
+   "score function",
+   "gradient of the log",
+   "log-density gradient",
+   "stein score"
+  ]
+ },
+ {
+  "id": "score-matching",
+  "family": "score",
+  "type": "concept",
+  "aliases": [
+   "score matching"
+  ]
+ },
+ {
+  "id": "denoising-score-matching",
+  "family": "score",
+  "type": "concept",
+  "aliases": [
+   "denoising score matching",
+   "denoising autoencoder"
+  ]
+ },
+ {
+  "id": "langevin-dynamics",
+  "family": "score",
+  "type": "concept",
+  "aliases": [
+   "langevin"
+  ]
+ },
+ {
+  "id": "annealed-sampling",
+  "family": "score",
+  "type": "concept",
+  "aliases": [
+   "annealed langevin",
+   "noise scale",
+   "multiple noise level"
+  ]
+ },
+ {
+  "id": "forward-noising-process",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "forward process",
+   "diffusion process",
+   "noising process",
+   "forward trajectory"
+  ]
+ },
+ {
+  "id": "reverse-process",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "reverse process",
+   "reverse-time",
+   "reverse diffusion",
+   "denoising process"
+  ]
+ },
+ {
+  "id": "noise-schedule",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "noise schedule",
+   "variance schedule",
+   "beta schedule"
+  ]
+ },
+ {
+  "id": "sde-formulation",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "stochastic differential equation",
+   "SDE"
+  ]
+ },
+ {
+  "id": "probability-flow-ode",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "probability flow"
+  ]
+ },
+ {
+  "id": "latent-variable-model",
+  "family": "variational",
+  "type": "object",
+  "aliases": [
+   "latent variable",
+   "latent variables"
+  ]
+ },
+ {
+  "id": "elbo",
+  "family": "variational",
+  "type": "object",
+  "aliases": [
+   "evidence lower bound",
+   "ELBO",
+   "variational lower bound",
+   "lower bound on the log"
+  ]
+ },
+ {
+  "id": "variational-inference",
+  "family": "variational",
+  "type": "concept",
+  "aliases": [
+   "variational inference",
+   "variational bayes",
+   "variational approximation"
+  ]
+ },
+ {
+  "id": "amortized-inference",
+  "family": "variational",
+  "type": "concept",
+  "aliases": [
+   "amortized",
+   "inference network",
+   "recognition model",
+   "recognition network"
+  ]
+ },
+ {
+  "id": "reparameterization-trick",
+  "family": "variational",
+  "type": "concept",
+  "aliases": [
+   "reparameterization",
+   "reparameterisation",
+   "reparametrization"
+  ]
+ },
+ {
+  "id": "importance-weighting",
+  "family": "variational",
+  "type": "concept",
+  "aliases": [
+   "importance weight",
+   "importance sampling"
+  ]
+ },
+ {
+  "id": "kl-divergence",
+  "family": "metric",
+  "type": "object",
+  "aliases": [
+   "kullback",
+   "KL divergence",
+   "relative entropy"
+  ]
+ },
+ {
+  "id": "jensen-inequality",
+  "family": "variational",
+  "type": "theorem",
+  "aliases": [
+   "jensen's inequality",
+   "jensen inequality"
+  ]
+ },
+ {
+  "id": "normalizing-flow",
+  "family": "flow",
+  "type": "object",
+  "aliases": [
+   "normalizing flow",
+   "normalising flow",
+   "invertible transformation"
+  ]
+ },
+ {
+  "id": "change-of-variables",
+  "family": "flow",
+  "type": "theorem",
+  "aliases": [
+   "change of variables"
+  ]
+ },
+ {
+  "id": "jacobian-determinant",
+  "family": "flow",
+  "type": "object",
+  "aliases": [
+   "jacobian determinant",
+   "determinant of the jacobian",
+   "log-determinant"
+  ]
+ },
+ {
+  "id": "coupling-layer",
+  "family": "flow",
+  "type": "concept",
+  "aliases": [
+   "coupling layer",
+   "coupling law",
+   "additive coupling",
+   "affine coupling"
+  ]
+ },
+ {
+  "id": "inverse-autoregressive-flow",
+  "family": "flow",
+  "type": "concept",
+  "aliases": [
+   "inverse autoregressive flow",
+   "IAF"
+  ]
+ },
+ {
+  "id": "invertibility",
+  "family": "flow",
+  "type": "concept",
+  "aliases": [
+   "invertible",
+   "bijective",
+   "bijection"
+  ]
+ },
+ {
+  "id": "dequantization",
+  "family": "flow",
+  "type": "concept",
+  "aliases": [
+   "dequantiz",
+   "dequantis"
+  ]
+ },
+ {
+  "id": "autoregressive-factorization",
+  "family": "autoregressive",
+  "type": "concept",
+  "aliases": [
+   "autoregressive",
+   "chain rule",
+   "product of conditional",
+   "factoriz the joint"
+  ]
+ },
+ {
+  "id": "masked-convolution",
+  "family": "autoregressive",
+  "type": "concept",
+  "aliases": [
+   "masked convolution",
+   "mask"
+  ]
+ },
+ {
+  "id": "ordering-dependence",
+  "family": "autoregressive",
+  "type": "concept",
+  "aliases": [
+   "ordering",
+   "order of the pixels",
+   "raster scan",
+   "permutation of the"
+  ]
+ },
+ {
+  "id": "discretized-logistic-mixture",
+  "family": "autoregressive",
+  "type": "concept",
+  "aliases": [
+   "discretized logistic",
+   "logistic mixture"
+  ]
+ },
+ {
+  "id": "minimax-objective",
+  "family": "adversarial",
+  "type": "object",
+  "aliases": [
+   "minimax",
+   "min max",
+   "two-player",
+   "adversarial objective"
+  ]
+ },
+ {
+  "id": "discriminator",
+  "family": "adversarial",
+  "type": "object",
+  "aliases": [
+   "discriminator",
+   "critic"
+  ]
+ },
+ {
+  "id": "generator-network",
+  "family": "adversarial",
+  "type": "object",
+  "aliases": [
+   "generator"
+  ]
+ },
+ {
+  "id": "jensen-shannon",
+  "family": "adversarial",
+  "type": "object",
+  "aliases": [
+   "jensen-shannon",
+   "jensen shannon",
+   "JSD"
+  ]
+ },
+ {
+  "id": "mode-collapse",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "mode collapse",
+   "mode dropping",
+   "missing modes"
+  ]
+ },
+ {
+  "id": "training-instability",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "unstable",
+   "instability",
+   "fails to converge",
+   "training difficult"
+  ]
+ },
+ {
+  "id": "conditional-generation",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "conditional generat",
+   "condition on",
+   "class label",
+   "conditioning"
+  ]
+ },
+ {
+  "id": "adversarial-regularization",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "adversarial regulariz",
+   "adversarial training of the"
+  ]
+ },
+ {
+  "id": "adversarial-inference",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "learned inference",
+   "joint distribution of",
+   "inference in adversarial"
+  ]
+ },
+ {
+  "id": "deep-convolutional-architecture",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "deep convolutional",
+   "DCGAN",
+   "architectural guideline"
+  ]
+ },
+ {
+  "id": "wasserstein-distance",
+  "family": "metric",
+  "type": "object",
+  "aliases": [
+   "wasserstein",
+   "earth mover",
+   "earth-mover"
+  ]
+ },
+ {
+  "id": "kantorovich-rubinstein",
+  "family": "metric",
+  "type": "theorem",
+  "aliases": [
+   "kantorovich",
+   "rubinstein",
+   "duality"
+  ]
+ },
+ {
+  "id": "lipschitz-constraint",
+  "family": "metric",
+  "type": "concept",
+  "aliases": [
+   "lipschitz"
+  ]
+ },
+ {
+  "id": "weight-clipping",
+  "family": "metric",
+  "type": "concept",
+  "aliases": [
+   "weight clipping",
+   "clip the weight",
+   "clamp the weight",
+   "clipped to a"
+  ]
+ },
+ {
+  "id": "gradient-penalty",
+  "family": "metric",
+  "type": "concept",
+  "aliases": [
+   "gradient penalty",
+   "penaliz the norm of the gradient"
+  ]
+ },
+ {
+  "id": "integral-probability-metric",
+  "family": "metric",
+  "type": "object",
+  "aliases": [
+   "integral probability metric",
+   "IPM"
+  ]
+ },
+ {
+  "id": "total-variation",
+  "family": "metric",
+  "type": "object",
+  "aliases": [
+   "total variation"
+  ]
+ },
+ {
+  "id": "optimal-transport",
+  "family": "metric",
+  "type": "object",
+  "aliases": [
+   "optimal transport",
+   "transport plan",
+   "coupling between distribution"
+  ]
+ },
+ {
+  "id": "latent-space-compression",
+  "family": "architecture",
+  "type": "concept",
+  "aliases": [
+   "latent space",
+   "perceptual compression",
+   "latent representation"
+  ]
+ },
+ {
+  "id": "cross-attention",
+  "family": "architecture",
+  "type": "concept",
+  "aliases": [
+   "cross-attention",
+   "cross attention"
+  ]
+ },
+ {
+  "id": "transformer-backbone",
+  "family": "architecture",
+  "type": "concept",
+  "aliases": [
+   "transformer"
+  ]
+ },
+ {
+  "id": "unet-backbone",
+  "family": "architecture",
+  "type": "concept",
+  "aliases": [
+   "u-net",
+   "unet"
+  ]
+ },
+ {
+  "id": "classifier-guidance",
+  "family": "architecture",
+  "type": "concept",
+  "aliases": [
+   "classifier guidance",
+   "classifier-free",
+   "guidance scale"
+  ]
+ },
+ {
+  "id": "log-likelihood-evaluation",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "log-likelihood",
+   "log likelihood"
+  ]
+ },
+ {
+  "id": "bits-per-dimension",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "bits/dim",
+   "bits per dim",
+   "bits per sub-pixel"
+  ]
+ },
+ {
+  "id": "inception-score",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "inception score"
+  ]
+ },
+ {
+  "id": "frechet-inception-distance",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "frechet inception",
+   "FID"
+  ]
+ },
+ {
+  "id": "sample-quality",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "sample quality",
+   "visual quality",
+   "perceptual quality"
+  ]
+ },
+ {
+  "id": "human-evaluation",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "human evaluat",
+   "human judge",
+   "mechanical turk",
+   "annotator"
+  ]
+ },
+ {
+  "id": "credit-assignment",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "credit assignment"
+  ]
+ },
+ {
+  "id": "classification-error-rate",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "classification error",
+   "test error rate",
+   "discriminative performance",
+   "error rate on"
+  ]
+ },
+ {
+  "id": "pseudo-likelihood",
+  "family": "energy",
+  "type": "concept",
+  "aliases": [
+   "pseudo-likelihood",
+   "pseudolikelihood",
+   "pseudo likelihood"
+  ]
+ },
+ {
+  "id": "planar-radial-flow",
+  "family": "flow",
+  "type": "concept",
+  "aliases": [
+   "planar flow",
+   "radial flow",
+   "rank-one",
+   "rank one perturbation"
+  ]
+ },
+ {
+  "id": "two-d-recurrent-layer",
+  "family": "autoregressive",
+  "type": "object",
+  "aliases": [
+   "row lstm",
+   "diagonal bilstm",
+   "two-dimensional lstm",
+   "diagonal lstm"
+  ]
+ },
+ {
+  "id": "diagonal-rescaling",
+  "family": "flow",
+  "type": "concept",
+  "aliases": [
+   "rescaling",
+   "diagonal scaling",
+   "scaling matrix",
+   "volume-preserving"
+  ]
+ },
+ {
+  "id": "non-saturating-loss",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "non-saturating",
+   "saturate",
+   "maximize log"
+  ]
+ },
+ {
+  "id": "aggregated-posterior",
+  "family": "variational",
+  "type": "object",
+  "aliases": [
+   "aggregated posterior",
+   "marginal posterior"
+  ]
+ },
+ {
+  "id": "loss-quality-correlation",
+  "family": "evaluation",
+  "type": "metric",
+  "aliases": [
+   "correlates with sample quality",
+   "loss correlat",
+   "meaningful loss metric"
+  ]
+ },
+ {
+  "id": "entropy-production-bound",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "entropy production",
+   "entropy bound",
+   "upper and lower bounds on the entropy"
+  ]
+ },
+ {
+  "id": "noise-conditional-network",
+  "family": "score",
+  "type": "object",
+  "aliases": [
+   "noise conditional score network",
+   "conditioned on the noise",
+   "single network to jointly estimate"
+  ]
+ },
+ {
+  "id": "posterior-collapse",
+  "family": "variational",
+  "type": "concept",
+  "aliases": [
+   "active units",
+   "active latent",
+   "posterior collapse",
+   "inactive units"
+  ]
+ },
+ {
+  "id": "bidirectional-inference",
+  "family": "variational",
+  "type": "concept",
+  "aliases": [
+   "bidirectional inference",
+   "top-down",
+   "bottom-up"
+  ]
+ },
+ {
+  "id": "receptive-field",
+  "family": "autoregressive",
+  "type": "concept",
+  "aliases": [
+   "receptive field"
+  ]
+ },
+ {
+  "id": "multiscale-squeeze",
+  "family": "flow",
+  "type": "concept",
+  "aliases": [
+   "squeeze",
+   "multi-scale architecture",
+   "factor out",
+   "factoring out"
+  ]
+ },
+ {
+  "id": "latent-arithmetic",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "vector arithmetic",
+   "latent arithmetic",
+   "interpolation in the latent",
+   "walking in the latent"
+  ]
+ },
+ {
+  "id": "patch-discriminator",
+  "family": "adversarial",
+  "type": "concept",
+  "aliases": [
+   "patchgan",
+   "patch-based discriminator",
+   "markovian discriminator",
+   "patch level"
+  ]
+ },
+ {
+  "id": "progressive-compression",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "progressive coding",
+   "progressive lossy",
+   "rate-distortion",
+   "rate distortion"
+  ]
+ },
+ {
+  "id": "predictor-corrector",
+  "family": "diffusion",
+  "type": "concept",
+  "aliases": [
+   "predictor-corrector",
+   "predictor corrector"
+  ]
+ },
+ {
+  "id": "compute-scaling",
+  "family": "architecture",
+  "type": "metric",
+  "aliases": [
+   "gflops",
+   "forward pass complexity",
+   "scaling behaviour",
+   "compute"
+  ]
+ }
+]
