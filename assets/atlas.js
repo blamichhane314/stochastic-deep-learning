@@ -39,7 +39,7 @@
   /* ---- shell ---- */
   var NAV = [["index.html","Timeline"],["network.html","Connections"],
              ["papers.html","Papers"],["concepts.html","Concepts"],
-             ["experiments.html","Experiments"]];
+             ["experiments.html","Experiments"],["resources.html","Resources"]];
   A.shell = function(here, dek){
     var nav = NAV.map(function(n){
       var cur = n[0] === here ? ' aria-current="page"' : "";

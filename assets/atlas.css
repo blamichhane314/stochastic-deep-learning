@@ -135,6 +135,24 @@ h4.sec{ font-family:var(--sans); font-size:11px; letter-spacing:.22em; text-tran
   color:var(--ink-faint); margin-top:7px; }
 .empty{ font-family:var(--sans); font-size:13.5px; color:var(--ink-faint); font-style:normal;
   border:1px dashed var(--rule); padding:16px 18px; }
+
+/* resources.html — one recommended talk per block, in reading order.
+   --spark, not --route, for the author mark: --route is white in cyanotype. */
+.res{ padding:16px 0 17px; border-bottom:1px solid var(--rule-soft); max-width:62ch; }
+.res .rp{ font-family:var(--sans); font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint); line-height:1.5; }
+.res .rp a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--rule-soft); }
+.res .rp a:hover{ color:var(--route); border-color:var(--route); }
+.res .rt{ font-size:19px; line-height:1.32; margin-top:7px; }
+.res .rt a{ text-decoration:none; border-bottom:1px solid var(--rule); }
+.res .rt a:hover{ color:var(--route); border-color:var(--route); }
+.res .rs{ font-family:var(--sans); font-size:13.5px; color:var(--ink-soft);
+  margin-top:7px; line-height:1.45; }
+.res .rs .mark{ font-size:10.5px; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--spark); margin-left:10px; white-space:nowrap; }
+.res .rv{ font-family:var(--sans); font-size:13px; color:var(--ink-faint);
+  margin-top:3px; line-height:1.5; }
+.res .prov{ margin-top:7px; letter-spacing:.11em; line-height:1.6; }
 .tbl{ width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; }
 .tbl th{ text-align:left; font-weight:400; color:var(--ink-faint); font-size:11px;
   letter-spacing:.16em; text-transform:uppercase; padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); }

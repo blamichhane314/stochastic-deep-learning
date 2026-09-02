@@ -1,0 +1,285 @@
+[
+ {
+  "id": "w-ackley1985-hinton-nobel",
+  "kind": "watch",
+  "title": "Boltzmann Machines",
+  "speaker": "Geoffrey Hinton",
+  "is_author": true,
+  "venue": "Nobel Lecture in Physics",
+  "year": 2024,
+  "channel": "The Royal Swedish Academy of Sciences",
+  "url": "https://www.youtube.com/watch?v=iCS1ds0UDP8",
+  "attaches_to": [
+   "ackley1985",
+   "boltzmann-machine"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "id": "w-hinton2006-ipam-2012",
+  "kind": "watch",
+  "title": "Geoffrey Hinton: \"Introduction to Deep Learning & Deep Belief Nets\"",
+  "speaker": "Geoffrey Hinton",
+  "is_author": true,
+  "venue": "Graduate Summer School: Deep Learning, Feature Learning, UCLA",
+  "year": 2012,
+  "channel": "Institute for Pure & Applied Mathematics (IPAM)",
+  "url": "https://www.youtube.com/watch?v=GJdWESd543Y",
+  "attaches_to": [
+   "hinton2006",
+   "deep-belief-network"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "id": "w-kingma2014-iclr14",
+  "kind": "watch",
+  "title": "ICLR14: D Kingma: Auto-Encoding Variational Bayes",
+  "speaker": "Diederik P. Kingma",
+  "is_author": true,
+  "venue": "ICLR",
+  "year": 2014,
+  "channel": "ICLR",
+  "url": "https://www.youtube.com/watch?v=rjZL7aguLAs",
+  "attaches_to": [
+   "kingma2014",
+   "variational-inference"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "id": "w-vandenoord2016-kalchbrenner-m2l",
+  "kind": "watch",
+  "title": "2022.09 Autoregressive Image Models - Nal Kalchbrenner",
+  "speaker": "Nal Kalchbrenner",
+  "is_author": true,
+  "venue": "M2L Summer School, Italy",
+  "year": 2022,
+  "channel": "Mediterranean Machine Learning (M2L) summer school",
+  "url": "https://www.youtube.com/watch?v=IpY7LWWXeKs",
+  "attaches_to": [
+   "vandenoord2016"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "id": "w-dinh-primer-flows-ipam",
+  "kind": "watch",
+  "title": "Laurent Dinh: \"A primer on normalizing flows\"",
+  "speaker": "Laurent Dinh",
+  "is_author": true,
+  "venue": "Machine Learning for Physics and the Physics of Learning, UCLA",
+  "year": 2019,
+  "channel": "Institute for Pure & Applied Mathematics (IPAM)",
+  "url": "https://www.youtube.com/watch?v=P4Ta-TZPVi0",
+  "attaches_to": [
+   "dinh2015",
+   "dinh2017",
+   "normalizing-flow"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "id": "w-song2019-ermon-ias",
+  "kind": "watch",
+  "title": "Generative Modeling by Estimating Gradients of the Data Distribution - Stefano Ermon",
+  "speaker": "Stefano Ermon",
+  "is_author": true,
+  "venue": "Institute for Advanced Study",
+  "year": 2020,
+  "channel": "Institute for Advanced Study",
+  "url": "https://www.youtube.com/watch?v=8TcNXi3A5DI",
+  "attaches_to": [
+   "song2019",
+   "score-function"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "id": "w-radford2016-indico-bostonml",
+  "kind": "watch",
+  "title": "Deep Advances in Generative Modeling",
+  "speaker": "Alec Radford",
+  "is_author": true,
+  "venue": "Boston ML Forum",
+  "year": 2016,
+  "channel": "Indico Data",
+  "url": "https://www.youtube.com/watch?v=KeJINHjyzOU",
+  "attaches_to": [
+   "radford2016"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "id": "w-songsde2021-mitcbmm",
+  "kind": "watch",
+  "title": "Diffusion and Score-Based Generative Models",
+  "speaker": "Yang Song",
+  "is_author": true,
+  "venue": "MIT Center for Brains, Minds and Machines",
+  "year": 2023,
+  "channel": "MITCBMM",
+  "url": "https://www.youtube.com/watch?v=wMmqCMwuM2Q",
+  "attaches_to": [
+   "songsde2021",
+   "score-matching"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-goodfellow2014-iccv17",
+  "title": "Tutorial on Generative adversarial networks - Introduction",
+  "speaker": "Ian Goodfellow",
+  "venue": "ICCV 2017 tutorial",
+  "year": 2017,
+  "channel": "ComputerVisionFoundation Videos",
+  "url": "https://www.youtube.com/watch?v=sgHdUYHGvtA",
+  "attaches_to": [
+   "goodfellow2014"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-sohldickstein2015-icml2015",
+  "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+  "speaker": "Jascha Sohl-Dickstein",
+  "venue": "ICML 2015, Lille",
+  "year": 2015,
+  "channel": "VideoLectures.NET",
+  "url": "https://videolectures.net/videos/icml2015_sohl_dickstein_deep_unsupervised_learning",
+  "attaches_to": [
+   "sohldickstein2015"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-rombach2022-heidelberg",
+  "title": "Stable Diffusion and Friends - Generative Modeling in Latent Space | Robin Rombach (Stability AI)",
+  "speaker": "Robin Rombach",
+  "venue": "Heidelberg AI Talk",
+  "year": 2023,
+  "channel": "heidelberg.ai",
+  "url": "https://www.youtube.com/watch?v=7W4aZObNucI",
+  "attaches_to": [
+   "rombach2022"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-isola2017-iccv17-efros",
+  "title": "Tutorial on Generative adversarial networks - GANs as Learned Loss Functions",
+  "speaker": "Alexei A. Efros",
+  "venue": "ICCV 2017 tutorial",
+  "year": 2017,
+  "channel": "ComputerVisionFoundation Videos",
+  "url": "https://www.youtube.com/watch?v=eHQglSbS1zM",
+  "attaches_to": [
+   "isola2017"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-arjovsky2017-bottou-simons",
+  "title": "The Missing Signal",
+  "speaker": "Léon Bottou",
+  "venue": "Simons Institute, Representation Learning workshop",
+  "year": 2017,
+  "channel": "Simons Institute for the Theory of Computing",
+  "url": "https://www.youtube.com/watch?v=DfJeaa--xO0",
+  "attaches_to": [
+   "arjovsky2017"
+  ]
+ },
+ {
+  "id": "w-tieleman2008-icml2008",
+  "kind": "watch",
+  "title": "Training Restricted Boltzmann Machines using Approximations to the Likelihood Gradient",
+  "speaker": "Tijmen Tieleman",
+  "is_author": true,
+  "venue": "ICML 2008, Helsinki",
+  "year": 2008,
+  "channel": "VideoLectures.NET",
+  "url": "https://videolectures.net/videos/icml08_tieleman_trb",
+  "attaches_to": [
+   "tieleman2008",
+   "persistent-chain",
+   "restricted-boltzmann-machine"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-burda2016-dlss2016",
+  "title": "Learning Deep Generative Models",
+  "speaker": "Ruslan Salakhutdinov",
+  "venue": "Deep Learning Summer School, Montreal",
+  "year": 2016,
+  "channel": "VideoLectures.NET",
+  "url": "https://videolectures.net/deeplearning2016_salakhutdinov_generative_models/",
+  "attaches_to": [
+   "burda2016",
+   "importance-weighting"
+  ]
+ },
+ {
+  "id": "w-salakhutdinov2009-ipam2012",
+  "kind": "watch",
+  "title": "Ruslan Salakhutdinov: \"Learning Hierarchical Generative Models, Pt. 1\"",
+  "speaker": "Ruslan Salakhutdinov",
+  "is_author": true,
+  "venue": "Graduate Summer School: Deep Learning, Feature Learning, UCLA",
+  "year": 2012,
+  "channel": "Institute for Pure & Applied Mathematics (IPAM)",
+  "url": "https://www.youtube.com/watch?v=E4b3lss8wLA",
+  "attaches_to": [
+   "salakhutdinov2009",
+   "deep-boltzmann-machine"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ }
+]
