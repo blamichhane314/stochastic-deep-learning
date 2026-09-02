@@ -61,7 +61,14 @@
   }
 
   var out=A.cites(id), inn=A.citedBy(id);
-  var side='<h4 class="sec">Notes</h4><p class="empty">None yet.</p>';
+  /* The neighbourhood opens the sidebar: it is the one thing on this page that
+     says where the paper sits rather than what it says, so it belongs beside the
+     reading rather than after it. */
+  var side='<h4 class="sec">This paper\u2019s neighbourhood</h4>'+
+    '<div class="egowrap" id="ego"></div>'+
+    '<p class="prov">Squares are papers, circles are concepts</p>'+
+    '<div class="rosekey" id="rosekey"></div>'+
+    '<h4 class="sec">Notes</h4><p class="empty">None yet.</p>';
   if(p.arxiv){
     side+='<h4 class="sec">Source</h4><p class="chips">'+
       '<a href="https://arxiv.org/abs/'+A.esc(p.arxiv)+'">arXiv '+A.esc(p.arxiv)+'</a></p>';
@@ -86,11 +93,6 @@
       p.contributions.map(function(c){ return '<span>'+A.esc(c)+'</span>'; }).join("")+'</p>';
   }
 
-  main+='<h4 class="sec">This paper\u2019s neighbourhood</h4>'+
-    '<div class="egowrap" id="ego"></div>'+
-    '<p class="prov">Squares are papers, circles are concepts</p>'+
-    '<div class="rosekey" id="rosekey"></div>';
-
   A.mount("papers.html", p.title,
     '<div class="cols two"><div>'+main+'</div><aside>'+side+'</aside></div>');
 
@@ -99,7 +101,7 @@
      links among the neighbours */
   (function(){
     var host=document.getElementById("ego"); if(!host||!A.Rose) return;
-    var rose=A.Rose(host,D,id,{W:host.clientWidth||760});
+    var rose=A.Rose(host,D,id,{W:(host.clientWidth||760)-2});
     if(!rose){ host.innerHTML='<p class="empty">Not enough links to draw a neighbourhood.</p>'; return; }
 
     /* The key. Every spoke in the rose carries a relation and each relation has
