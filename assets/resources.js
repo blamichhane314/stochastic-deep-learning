@@ -11,7 +11,8 @@
     var where=[r.venue, r.year].filter(Boolean).join(", ");
     return '<div class="res">'+
       '<p class="rp"><a href="paper.html?id='+pid+'">'+A.esc(A.paper(pid).title)+'</a></p>'+
-      '<p class="rt"><a href="'+A.esc(r.url)+'">'+A.esc(r.title)+'</a></p>'+
+      '<p class="rt"><a href="'+A.esc(r.url)+'" target="_blank" rel="noopener">'+
+        A.esc(r.title)+'</a></p>'+
       '<p class="rs">'+A.esc(r.speaker)+mark+'</p>'+
       (where ? '<p class="rv">'+A.esc(where)+'</p>' : "")+
       (r.channel && r.channel!==r.venue ? '<p class="prov">'+A.esc(r.channel)+'</p>' : "")+
