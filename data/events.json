@@ -1,0 +1,26 @@
+[
+ {
+  "id": "iccv2017-gan",
+  "title": "Tutorial on Generative Adversarial Networks",
+  "venue": "ICCV 2017",
+  "place": "Venice",
+  "dates": "22 October 2017",
+  "source": "https://sites.google.com/view/iccv-2017-gans"
+ },
+ {
+  "id": "cvpr2018-gan",
+  "title": "Tutorial on Generative Adversarial Networks",
+  "venue": "CVPR 2018",
+  "place": "Salt Palace Convention Center, Salt Lake City",
+  "dates": "22 June 2018",
+  "source": "https://sites.google.com/view/cvpr2018tutorialongans/"
+ },
+ {
+  "id": "ipam2012-dlfl",
+  "title": "Graduate Summer School: Deep Learning, Feature Learning",
+  "venue": "IPAM, UCLA",
+  "place": "Los Angeles",
+  "dates": "9 – 27 July 2012",
+  "source": "https://www.ipam.ucla.edu/programs/summer-schools/graduate-summer-school-deep-learning-feature-learning/"
+ }
+]

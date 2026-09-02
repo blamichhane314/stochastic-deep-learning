@@ -153,6 +153,31 @@ h4.sec{ font-family:var(--sans); font-size:11px; letter-spacing:.22em; text-tran
 .res .rv{ font-family:var(--sans); font-size:13px; color:var(--ink-faint);
   margin-top:3px; line-height:1.5; }
 .res .prov{ margin-top:7px; letter-spacing:.11em; line-height:1.6; }
+.head .grp{ margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; }
+/* an event: the occasion, then its talks in the order they were given */
+.evt{ padding-top:4px; }
+.evt + .evt{ margin-top:34px; }
+.evt h3{ font-size:23px; line-height:1.24; margin-top:6px; font-weight:400; }
+.evt .evwhen{ font-family:var(--sans); font-size:12.5px; letter-spacing:.04em;
+  color:var(--ink-faint); margin-top:6px; margin-bottom:4px; }
+/* one talk inside an event: its slot in the day, then the talk */
+.etalk{ display:grid; grid-template-columns:5.5rem minmax(0,1fr); gap:0 14px;
+  padding:13px 0; border-bottom:1px solid var(--rule-soft); align-items:baseline; }
+.etalk .eslot{ font-family:var(--sans); font-size:11px; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--ink-faint); white-space:nowrap; }
+.etalk .et{ font-size:16.5px; line-height:1.34; }
+.etalk .et a{ text-decoration:none; border-bottom:1px solid var(--rule); }
+.etalk .et a:hover{ color:var(--route); border-color:var(--route); }
+.etalk .ew{ font-family:var(--sans); font-size:13px; color:var(--ink-soft);
+  margin-top:5px; line-height:1.45; }
+.etalk .epaper{ font-family:var(--sans); font-size:11px; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--spark); margin-top:6px; line-height:1.5; }
+.etalk .epaper a{ color:inherit; text-decoration:none;
+  border-bottom:1px solid var(--rule-soft); }
+@media (max-width:560px){
+  .etalk{ grid-template-columns:1fr; gap:0; }
+  .etalk .eslot{ margin-bottom:5px; }
+}
 .tbl{ width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; }
 .tbl th{ text-align:left; font-weight:400; color:var(--ink-faint); font-size:11px;
   letter-spacing:.16em; text-transform:uppercase; padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); }
