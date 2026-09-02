@@ -68,7 +68,6 @@
   } else {
     side+='<h4 class="sec">Source</h4><p class="empty">Predates arXiv</p>';
   }
-  side+=A.watchBlock(id);
   side+='<h4 class="sec">Evaluated with</h4>';
   side+= p.evaluation && p.evaluation.length
     ? '<p class="chips">'+p.evaluation.map(function(c){

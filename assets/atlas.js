@@ -119,20 +119,6 @@
       return r.kind === "watch" && r.attaches_to.indexOf(id) >= 0; });
   };
 
-  A.watchBlock = function(id){
-    var list = A.watch(id); if (!list.length) return "";
-    return '<h4 class="sec">Recommended watch</h4>' + list.map(function(r){
-      var mark = r.is_author
-        ? '<span class="mark">'+(r.confidence === "confirmed" ? "author" : "author, unconfirmed")+'</span>'
-        : "";
-      var where = [r.venue, r.year].filter(Boolean).join(", ");
-      return '<div class="watch"><p class="wt"><a href="'+A.esc(r.url)+'">'+A.esc(r.title)+'</a></p>'+
-        '<p class="ws">'+A.esc(r.speaker)+mark+'</p>'+
-        (where ? '<p class="wv">'+A.esc(where)+'</p>' : "")+
-        '<p class="prov">'+A.esc(r.channel || "")+'</p></div>';
-    }).join("");
-  };
-
   A.RELORDER = ["introduces","motivated-by","extends","replaces","uses",
                 "evaluates-with","acknowledges-limitation"];
 
