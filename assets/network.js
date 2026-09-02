@@ -44,9 +44,54 @@
     document.documentElement.style.setProperty("--barh",Math.round(h)+"px");
   }
 
+  /* ---- where you have been ----
+     Isolating a node says where you are and forgets where you were, which is
+     the wrong trade when the whole point is to walk the graph. The last few
+     visited nodes keep a glow, each fainter than the one after it.
+
+     The decay is over visit ORDER, not wall-clock: a trail that evaporated
+     while you sat reading the panel would punish the slow reader, who is the
+     reader this site is for. Weight for the nth node back is exp(-n/TAU), so
+     the one you just left is full strength and the trail is spent about seven
+     nodes later. Ids are shared across all three views, so the trail follows
+     you from the chart to the bipartite columns to the matrix. */
+  var TRAIL=[], TAU=2.2, FLOOR=0.06, CAP=10, current=null;
+
+  function remember(id){
+    if(!id) return;
+    var i=TRAIL.indexOf(id);
+    if(i===0) return;             /* still standing on it */
+    if(i>0) TRAIL.splice(i,1);    /* revisited: it comes back to the front */
+    TRAIL.unshift(id);
+    if(TRAIL.length>CAP) TRAIL.length=CAP;
+  }
+
+  function glow(){
+    /* Ask the host for the svg that is actually on screen. A view paints once
+       from inside its own constructor, before `inst` has been reassigned, so
+       inst.svg would still be the previous view's detached node and the trail
+       would be written to an element nobody can see. */
+    var svg=host.querySelector("svg");
+    if(!svg) return;
+    var w={}, rank=0;
+    TRAIL.forEach(function(id){
+      if(current&&id===current) return;   /* the node you are on has its own mark */
+      var v=Math.exp(-rank/TAU); rank++;
+      if(v>=FLOOR) w[id]=v;
+    });
+    [].forEach.call(svg.querySelectorAll(".pn,.cn,.bn,.ml"),function(n){
+      var v=w[n.dataset.id];
+      n.classList.toggle("trail",!!v);
+      if(v) n.style.setProperty("--trail",v.toFixed(3));
+      else n.style.removeProperty("--trail");
+    });
+  }
+
   function detail(sel,edges){
+    var selId=sel?(sel.id!==undefined?sel.id:sel):null;
+    remember(selId); current=selId; glow();
     if(!sel){ panel.classList.remove("open"); return; }
-    var id=sel.id!==undefined?sel.id:sel;
+    var id=selId;
     var kind=(sel.kind)||(A.paper(id)?"paper":"concept");
     var h='';
     if(kind==="paper"){
@@ -98,8 +143,16 @@
     } else {
       inst=A.MatrixView(host,D,{W:cw,H:ch,onSelect:detail});
     }
+    glow();   /* the trail is the shell's, not the view's: it crosses views */
   }
   render();
+
+  /* Esc clears the selection; Esc again, with nothing selected, clears the trail.
+     Capture phase so this sees `current` before the view's own handler nulls it. */
+  document.addEventListener("keydown",function(ev){
+    if(ev.key!=="Escape"||current||!TRAIL.length) return;
+    TRAIL.length=0; glow();
+  },true);
 
   document.getElementById("pclose").addEventListener("click",function(){
     panel.classList.remove("open");
