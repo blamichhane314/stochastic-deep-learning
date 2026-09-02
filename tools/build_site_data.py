@@ -122,15 +122,27 @@ for pid in order:
                          for m in MATH if m["paper"]==pid]
 
 
+# --- recommended resources: hand-curated, one row per talk, surfaced on resources.html --
+RES=[]
+rp=f"{S}/resources.json"
+if os.path.exists(rp):
+    RES=json.load(open(rp))
+    known={*order,*(c["id"] for c in concepts)}
+    stray=[(r["id"],a) for r in RES for a in r["attaches_to"] if a not in known]
+    if stray: sys.exit("resources attach to unknown ids: %r"%stray)
+
 DATA=dict(papers=[papers[p] for p in order],concepts=concepts,math_count=len(MATH),
-          edges=G["edges"],sessions=sessions,
+          edges=G["edges"],sessions=sessions,resources=RES,
           stats=dict(papers=len(order),concepts_total=len(vocab),
                      concepts_live=len(live),edges=len(G["edges"])))
 json.dump(DATA,open(f"{R}/data/graph.json","w"),indent=1)
+json.dump(RES,open(f"{R}/data/resources.json","w"),indent=1,ensure_ascii=False)
 open(f"{R}/assets/data.js","w").write("window.SDL="+json.dumps(DATA,separators=(',',':'))+";\n")
 miss=[p for p in order if not papers[p]["selfquote"]]
 print("papers %d | concepts %d (%d populated) | edges %d"%(len(order),len(vocab),len(live),len(G["edges"])))
 print("papers without a self-quote:", miss or "none")
 nc=sum(1 for e in G["edges"] if e.get("context") is None)
 print("edges whose surrounding passage could not be located:", nc)
+print("recommended resources: %d, on %d of %d papers"%(
+    len(RES),sum(1 for p in order if any(p in r["attaches_to"] for r in RES)),len(order)))
 print("data.js %.0f KB"%(os.path.getsize(f"{R}/assets/data.js")/1024))
