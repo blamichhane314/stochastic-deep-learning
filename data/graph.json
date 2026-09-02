@@ -9374,7 +9374,7 @@
    "method": "manual",
    "confidence": "confirmed",
    "summary": "",
-   "id": "w-salakhutdinov-dlss2016",
+   "id": "w-burda2016-dlss2016",
    "title": "Learning Deep Generative Models",
    "speaker": "Ruslan Salakhutdinov",
    "venue": "Deep Learning Summer School, Montreal",
@@ -9382,11 +9382,27 @@
    "channel": "VideoLectures.NET",
    "url": "https://videolectures.net/deeplearning2016_salakhutdinov_generative_models/",
    "attaches_to": [
-    "salakhutdinov2009",
     "burda2016",
-    "deep-boltzmann-machine",
     "importance-weighting"
    ]
+  },
+  {
+   "id": "w-salakhutdinov2009-ipam2012",
+   "kind": "watch",
+   "title": "Ruslan Salakhutdinov: \"Learning Hierarchical Generative Models, Pt. 1\"",
+   "speaker": "Ruslan Salakhutdinov",
+   "is_author": true,
+   "venue": "Graduate Summer School: Deep Learning, Feature Learning, UCLA",
+   "year": 2012,
+   "channel": "Institute for Pure & Applied Mathematics (IPAM)",
+   "url": "https://www.youtube.com/watch?v=E4b3lss8wLA",
+   "attaches_to": [
+    "salakhutdinov2009",
+    "deep-boltzmann-machine"
+   ],
+   "method": "manual",
+   "confidence": "confirmed",
+   "summary": ""
   }
  ],
  "stats": {
