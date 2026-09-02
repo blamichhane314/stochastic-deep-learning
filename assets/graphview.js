@@ -491,6 +491,12 @@
     ins.forEach(function(e){ push(e.from,"paper","cited-by"); });
     if(items.length<2){ return null; }
 
+    /* which relations this particular rose ended up drawing, in the house order.
+       The key is built from this, so it never names a line the reader cannot see. */
+    var drew={}; items.forEach(function(it){ drew[it.rel]=1; });
+    var relsDrawn=A.RELORDER.concat(["relates","cites","cited-by"])
+      .filter(function(r){ return drew[r]; });
+
     /* segment gaps: before concepts, before cites, before cited-by */
     var segStart={}; segStart[0]=1;
     var nc=items.filter(function(i){return i.kind==="concept";}).length;
@@ -602,6 +608,6 @@
       if(g&&(ev.key==="Enter"||ev.key===" ")){ ev.preventDefault(); open(g); }
     });
     paint(null);
-    return {svg:svg};
+    return {svg:svg, rels:relsDrawn, chords:chords.length>0};
   };
 })();

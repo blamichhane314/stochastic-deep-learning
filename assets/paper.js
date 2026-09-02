@@ -88,7 +88,8 @@
 
   main+='<h4 class="sec">This paper\u2019s neighbourhood</h4>'+
     '<div class="egowrap" id="ego"></div>'+
-    '<p class="prov">Squares are papers, circles are concepts</p>';
+    '<p class="prov">Squares are papers, circles are concepts</p>'+
+    '<div class="rosekey" id="rosekey"></div>';
 
   A.mount("papers.html", p.title,
     '<div class="cols two"><div>'+main+'</div><aside>'+side+'</aside></div>');
@@ -99,6 +100,31 @@
   (function(){
     var host=document.getElementById("ego"); if(!host||!A.Rose) return;
     var rose=A.Rose(host,D,id,{W:host.clientWidth||760});
-    if(!rose) host.innerHTML='<p class="empty">Not enough links to draw a neighbourhood.</p>';
+    if(!rose){ host.innerHTML='<p class="empty">Not enough links to draw a neighbourhood.</p>'; return; }
+
+    /* The key. Every spoke in the rose carries a relation and each relation has
+       its own line, so name them -- otherwise the picture asks the reader to
+       infer an encoding it never shows. Only the relations this rose actually
+       drew are listed; a key for a line that is not on the page is noise.
+       The swatch is a real `svg.rose` with the spoke's own class, so it is
+       drawn by the same stylesheet and cannot fall out of step with it. */
+    var LAB={"introduces":"introduces","motivated-by":"motivated by","extends":"extends",
+             "replaces":"replaces","uses":"uses","evaluates-with":"evaluates with",
+             "acknowledges-limitation":"limitation","relates":"concept \u2194 concept",
+             "cites":"cites","cited-by":"cited by"};
+    function swatch(cls,d){
+      return '<svg class="rose" width="26" height="9" viewBox="0 0 26 9" aria-hidden="true">'+
+        '<path class="'+cls+'" d="'+d+'"/></svg>';
+    }
+    var key=document.getElementById("rosekey");
+    if(!key) return;
+    var parts=(rose.rels||[]).map(function(r){
+      return '<span class="k">'+swatch("sp t-"+r,"M1 4.5 H25")+
+             '<b>'+A.esc(LAB[r]||r.replace(/-/g," "))+'</b></span>';
+    });
+    if(rose.chords)
+      parts.push('<span class="k">'+swatch("ch","M1 7 Q13 0 25 7")+
+                 '<b>between neighbours</b></span>');
+    key.innerHTML=parts.join("");
   })();
 })();
