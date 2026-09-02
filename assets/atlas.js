@@ -111,15 +111,6 @@
   A.citedBy = function(pid){ return D.edges.filter(function(e){
     return e.kind === "paper-paper" && e.to === pid; }); };
 
-  /* ---- recommended resources ----
-     A talk earns its place by being the best account of the paper, so the
-     row carries only what can be checked: who speaks, where, when, and who
-     posted it. Nothing here describes what is said. */
-  A.watch = function(id){
-    return (D.resources || []).filter(function(r){
-      return r.kind === "watch" && r.attaches_to.indexOf(id) >= 0; });
-  };
-
   A.RELORDER = ["introduces","motivated-by","extends","replaces","uses",
                 "evaluates-with","acknowledges-limitation"];
 
