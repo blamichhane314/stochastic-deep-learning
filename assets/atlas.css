@@ -336,6 +336,41 @@ svg.bip2 .bn.sel .blab{ fill:var(--ink); font-weight:500; }
 svg.bip2 .bn.sel .bdot{ opacity:1; r:5; }
 svg.bip2 .bn.near .blab{ fill:var(--ink); }
 svg.bip2 .bn.far{ opacity:.24; }
+/* ---- visit trail ----
+   Nodes you have already been to, glowing behind you. --trail is set per node
+   in network.js: 1 for the one you just left, decaying exponentially back
+   through the last few. Placed after every .sel / .near / .far rule above so
+   the cascade is plain rather than a specificity argument.
+
+   The glow is --ink, deliberately NOT --spark: gold already means "this paper
+   cites that one" on the arcs, and an ink that means two things means neither.
+   The trail is not a relation in the corpus at all -- it is a record of the
+   reader's own movement -- so it takes the neutral text ink and is told apart
+   from the selected node by form instead: a halo around it, never a fill. */
+svg.chart .pn.trail,svg.chart .cn.trail,
+svg.bip2 .bn.trail,svg.mx .ml.trail{
+  filter:drop-shadow(0 0 calc(1.5px + 6.5px * var(--trail,0)) var(--ink));
+}
+/* Isolating dims everything unrelated. A trail node has to climb back out of
+   that, or the trail is invisible exactly when it is most useful. */
+svg.chart .pn.trail.far,svg.chart .cn.trail.far{ opacity:calc(.16 + .72 * var(--trail,0)); }
+svg.bip2 .bn.trail.far{ opacity:calc(.24 + .64 * var(--trail,0)); }
+svg.mx.focused .ml.trail.far{ opacity:calc(.3 + .6 * var(--trail,0)); }
+
+/* the mark itself, so the glow has something solid at its centre */
+svg.chart .pn.trail .mk{ stroke:var(--ink); }
+svg.chart .cn.trail .dot{ opacity:1; stroke:var(--ink); stroke-width:2.5; }
+svg.bip2 .bn.trail .bdot{ opacity:1; fill:var(--ink); }
+svg.chart .pn.trail .pl,svg.chart .cn.trail .cl,
+svg.bip2 .bn.trail .blab,svg.mx .ml.trail .mt{ fill:var(--ink-soft); }
+
+/* The glow fades in rather than snapping, which is what makes it read as a
+   trail rather than as a second selection. Line 172 turns this off wholesale
+   under prefers-reduced-motion; the glow itself stays, only the easing goes. */
+svg.chart .pn,svg.chart .cn,svg.bip2 .bn,svg.mx .ml{
+  transition:filter .45s ease-out,opacity .45s ease-out;
+}
+
 svg.bip2 .bw{ fill:none; stroke:var(--route); stroke-width:1; opacity:.55; }
 svg.bip2 .bw.t-cites{ stroke:var(--ink-faint); opacity:.75; stroke-width:1.1; }
 svg.bip2 .bw.t-relates{ stroke-width:1.5; opacity:.85; }
