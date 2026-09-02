@@ -54,32 +54,15 @@
   "summary": ""
  },
  {
-  "id": "w-rezende2015-uai2017",
+  "id": "w-vandenoord2016-kalchbrenner-m2l",
   "kind": "watch",
-  "title": "UAI 2017 Tutorial: Shakir Mohamed & Danilo Rezende",
-  "speaker": "Danilo Rezende and Shakir Mohamed",
-  "is_author": true,
-  "venue": "UAI tutorial, “Deep Generative Models”",
-  "year": 2017,
-  "channel": "A UAI",
-  "url": "https://www.youtube.com/watch?v=JrO5fSskISY",
-  "attaches_to": [
-   "rezende2015"
-  ],
-  "method": "manual",
-  "confidence": "confirmed",
-  "summary": ""
- },
- {
-  "id": "w-vandenoord2016-kalchbrenner-lmlm",
-  "kind": "watch",
-  "title": "Google's Deepmind - Nal Kalchbrenner - a general rule for generative models",
+  "title": "2022.09 Autoregressive Image Models - Nal Kalchbrenner",
   "speaker": "Nal Kalchbrenner",
   "is_author": true,
-  "venue": "London Machine Learning Meetup",
-  "year": 2016,
-  "channel": "London Machine Learning Meetup",
-  "url": "https://www.youtube.com/watch?v=mi2vQjoR-28",
+  "venue": "M2L Summer School, Italy",
+  "year": 2022,
+  "channel": "Mediterranean Machine Learning (M2L) summer school",
+  "url": "https://www.youtube.com/watch?v=IpY7LWWXeKs",
   "attaches_to": [
    "vandenoord2016"
   ],
@@ -107,43 +90,6 @@
   "summary": ""
  },
  {
-  "id": "w-goodfellow2014-nips2016-tutorial",
-  "kind": "watch",
-  "title": "Ian Goodfellow: Generative Adversarial Networks (NIPS 2016 tutorial)",
-  "speaker": "Ian Goodfellow",
-  "is_author": true,
-  "venue": "NIPS tutorial",
-  "year": 2016,
-  "channel": "Steven Van Vaerenbergh",
-  "url": "https://www.youtube.com/watch?v=HGYYEUSm-0Q",
-  "attaches_to": [
-   "goodfellow2014",
-   "generator-network",
-   "discriminator"
-  ],
-  "method": "manual",
-  "confidence": "confirmed",
-  "note": "Third-party upload. The video NIPS itself linked was hosted on Channel 9, which Microsoft retired.",
-  "summary": ""
- },
- {
-  "id": "w-sohldickstein2015-mit-6s192",
-  "kind": "watch",
-  "title": "MIT 6.S192 - Lecture 22: Diffusion Probabilistic Models, Jascha Sohl-Dickstein",
-  "speaker": "Jascha Sohl-Dickstein",
-  "is_author": true,
-  "venue": "MIT 6.S192, Deep Learning for Art, Aesthetics, and Creativity",
-  "year": 2022,
-  "channel": "Nick Ali Jahanian",
-  "url": "https://www.youtube.com/watch?v=XCUlnHP1TNM",
-  "attaches_to": [
-   "sohldickstein2015"
-  ],
-  "method": "manual",
-  "confidence": "confirmed",
-  "summary": ""
- },
- {
   "id": "w-song2019-ermon-ias",
   "kind": "watch",
   "title": "Generative Modeling by Estimating Gradients of the Data Distribution - Stefano Ermon",
@@ -152,63 +98,10 @@
   "venue": "Institute for Advanced Study",
   "year": 2020,
   "channel": "Institute for Advanced Study",
-  "url": "https://www.youtube.com/watch?v=JFpsPzfhTP4",
+  "url": "https://www.youtube.com/watch?v=8TcNXi3A5DI",
   "attaches_to": [
    "song2019",
    "score-function"
-  ],
-  "method": "manual",
-  "confidence": "confirmed",
-  "summary": ""
- },
- {
-  "id": "w-rombach2022-ommer-epfl",
-  "kind": "watch",
-  "title": "Björn Ommer: Generative AI, Stable Diffusion, and the Revolution in Visual Synthesis",
-  "speaker": "Björn Ommer",
-  "is_author": true,
-  "venue": "EPFL Seminar Series in Imaging",
-  "year": 2023,
-  "channel": "EPFL Center for Imaging",
-  "url": "https://www.youtube.com/watch?v=j9nB_DttAlw",
-  "attaches_to": [
-   "rombach2022"
-  ],
-  "method": "manual",
-  "confidence": "confirmed",
-  "summary": ""
- },
- {
-  "id": "w-tieleman2008-larochelle-pcd",
-  "kind": "watch",
-  "title": "Neural networks [5.6] : Restricted Boltzmann machine - persistent CD",
-  "speaker": "Hugo Larochelle",
-  "is_author": false,
-  "venue": "Neural networks course, Université de Sherbrooke",
-  "year": 2013,
-  "channel": "Hugo Larochelle",
-  "url": "https://www.youtube.com/watch?v=S0kFFiHzR8M",
-  "attaches_to": [
-   "tieleman2008",
-   "persistent-chain",
-   "restricted-boltzmann-machine"
-  ],
-  "method": "manual",
-  "confidence": "confirmed",
-  "summary": ""
- },
- {
-  "id": "w-salakhutdinov2009-ipam-2012",
-  "kind": "watch",
-  "title": "Ruslan Salakhutdinov: \"Learning Hierarchical Generative Models, Pt. 1\"",
-  "speaker": "Ruslan Salakhutdinov",
-  "is_author": true,
-  "venue": "Graduate Summer School: Deep Learning, Feature Learning, UCLA",
-  "year": 2012,
-  "channel": "Institute for Pure & Applied Mathematics (IPAM)",
-  "url": "https://www.youtube.com/watch?v=E4b3lss8wLA",
-  "attaches_to": [
-   "salakhutdinov2009"
   ],
   "method": "manual",
   "confidence": "confirmed",
@@ -232,23 +125,6 @@
   "summary": ""
  },
  {
-  "id": "w-ho2020-neurips2020",
-  "kind": "watch",
-  "title": "Denoising Diffusion Probabilistic Models",
-  "speaker": "Jonathan Ho, Ajay Jain and Pieter Abbeel",
-  "is_author": true,
-  "venue": "NeurIPS",
-  "year": 2020,
-  "channel": "SlidesLive",
-  "url": "https://slideslive.com/38936172/denoising-diffusion-probabilistic-models",
-  "attaches_to": [
-   "ho2020"
-  ],
-  "method": "manual",
-  "confidence": "confirmed",
-  "summary": ""
- },
- {
   "id": "w-songsde2021-mitcbmm",
   "kind": "watch",
   "title": "Diffusion and Score-Based Generative Models",
@@ -265,5 +141,147 @@
   "method": "manual",
   "confidence": "confirmed",
   "summary": ""
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-rezende2015-icml2015",
+  "title": "Variational Inference with Normalizing Flows",
+  "speaker": "Danilo Jimenez Rezende",
+  "venue": "ICML 2015, Lille",
+  "year": 2015,
+  "channel": "VideoLectures.NET",
+  "url": "https://videolectures.net/icml2015_jimenez_rezende_normalizing_flows/",
+  "attaches_to": [
+   "rezende2015",
+   "normalizing-flow"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-goodfellow2014-iccv17",
+  "title": "Tutorial on Generative adversarial networks - Introduction",
+  "speaker": "Ian Goodfellow",
+  "venue": "ICCV 2017 tutorial",
+  "year": 2017,
+  "channel": "ComputerVisionFoundation Videos",
+  "url": "https://www.youtube.com/watch?v=sgHdUYHGvtA",
+  "attaches_to": [
+   "goodfellow2014"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-sohldickstein2015-icml2015",
+  "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+  "speaker": "Jascha Sohl-Dickstein",
+  "venue": "ICML 2015, Lille",
+  "year": 2015,
+  "channel": "VideoLectures.NET",
+  "url": "https://videolectures.net/videos/icml2015_sohl_dickstein_deep_unsupervised_learning",
+  "attaches_to": [
+   "sohldickstein2015"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-rombach2022-heidelberg",
+  "title": "Stable Diffusion and Friends - Generative Modeling in Latent Space | Robin Rombach (Stability AI)",
+  "speaker": "Robin Rombach",
+  "venue": "Heidelberg AI Talk",
+  "year": 2023,
+  "channel": "heidelberg.ai",
+  "url": "https://www.youtube.com/watch?v=7W4aZObNucI",
+  "attaches_to": [
+   "rombach2022"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-isola2017-iccv17-efros",
+  "title": "Tutorial on Generative adversarial networks - GANs as Learned Loss Functions",
+  "speaker": "Alexei A. Efros",
+  "venue": "ICCV 2017 tutorial",
+  "year": 2017,
+  "channel": "ComputerVisionFoundation Videos",
+  "url": "https://www.youtube.com/watch?v=eHQglSbS1zM",
+  "attaches_to": [
+   "isola2017"
+  ]
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-arjovsky2017-bottou-simons",
+  "title": "The Missing Signal",
+  "speaker": "Léon Bottou",
+  "venue": "Simons Institute, Representation Learning workshop",
+  "year": 2017,
+  "channel": "Simons Institute for the Theory of Computing",
+  "url": "https://www.youtube.com/watch?v=DfJeaa--xO0",
+  "attaches_to": [
+   "arjovsky2017"
+  ]
+ },
+ {
+  "id": "w-tieleman2008-icml2008",
+  "kind": "watch",
+  "title": "Training Restricted Boltzmann Machines using Approximations to the Likelihood Gradient",
+  "speaker": "Tijmen Tieleman",
+  "is_author": true,
+  "venue": "ICML 2008, Helsinki",
+  "year": 2008,
+  "channel": "VideoLectures.NET",
+  "url": "https://videolectures.net/videos/icml08_tieleman_trb",
+  "attaches_to": [
+   "tieleman2008",
+   "persistent-chain",
+   "restricted-boltzmann-machine"
+  ],
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": ""
+ },
+ {
+  "kind": "watch",
+  "is_author": true,
+  "method": "manual",
+  "confidence": "confirmed",
+  "summary": "",
+  "id": "w-salakhutdinov-dlss2016",
+  "title": "Learning Deep Generative Models",
+  "speaker": "Ruslan Salakhutdinov",
+  "venue": "Deep Learning Summer School, Montreal",
+  "year": 2016,
+  "channel": "VideoLectures.NET",
+  "url": "https://videolectures.net/deeplearning2016_salakhutdinov_generative_models/",
+  "attaches_to": [
+   "salakhutdinov2009",
+   "burda2016",
+   "deep-boltzmann-machine",
+   "importance-weighting"
+  ]
  }
 ]
