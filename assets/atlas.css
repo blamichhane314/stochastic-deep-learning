@@ -342,14 +342,26 @@ svg.bip2 .bn.far{ opacity:.24; }
    through the last few. Placed after every .sel / .near / .far rule above so
    the cascade is plain rather than a specificity argument.
 
-   The glow is --ink, deliberately NOT --spark: gold already means "this paper
-   cites that one" on the arcs, and an ink that means two things means neither.
-   The trail is not a relation in the corpus at all -- it is a record of the
-   reader's own movement -- so it takes the neutral text ink and is told apart
-   from the selected node by form instead: a halo around it, never a fill. */
+   The glow is --spark: gold in cyanotype, brick in survey, magenta in bathy,
+   orange in thermal. Owner's call, and it survives the objection that first
+   pushed it to --ink -- that --spark already means "this paper cites that one"
+   on the arcs. What makes it work is that the trail is now a lit DISC and the
+   arcs are thin LINES. When the glow was only a faint bloom the two were easy
+   to confuse; a body is not a stroke, and form separates them where hue does
+   not. The selected node stays --route and a solid fill, so all three marks
+   differ in shape before they differ in colour. */
 svg.chart .pn.trail,svg.chart .cn.trail,
 svg.bip2 .bn.trail,svg.mx .ml.trail{
-  filter:drop-shadow(0 0 calc(1.5px + 6.5px * var(--trail,0)) var(--ink));
+  filter:drop-shadow(0 0 calc(2px + 11px * var(--trail,0)) var(--spark))
+         drop-shadow(0 0 calc(1px + 4px  * var(--trail,0)) var(--spark));
+}
+/* Every node already carries a transparent shape as its hit target. Lighting it
+   gives the glow a body instead of only a bloom -- a bloom alone reads as
+   "slightly brighter", which is not what you can pick out of a plate of ninety
+   nodes at a glance. */
+svg.chart .pn.trail .hit,svg.chart .cn.trail .hit,
+svg.bip2 .bn.trail .hit,svg.mx .ml.trail .hit{
+  fill:var(--spark); opacity:calc(.22 * var(--trail,0));
 }
 /* Isolating dims everything unrelated. A trail node has to climb back out of
    that, or the trail is invisible exactly when it is most useful. */
@@ -358,9 +370,9 @@ svg.bip2 .bn.trail.far{ opacity:calc(.24 + .64 * var(--trail,0)); }
 svg.mx.focused .ml.trail.far{ opacity:calc(.3 + .6 * var(--trail,0)); }
 
 /* the mark itself, so the glow has something solid at its centre */
-svg.chart .pn.trail .mk{ stroke:var(--ink); }
-svg.chart .cn.trail .dot{ opacity:1; stroke:var(--ink); stroke-width:2.5; }
-svg.bip2 .bn.trail .bdot{ opacity:1; fill:var(--ink); }
+svg.chart .pn.trail .mk{ stroke:var(--spark); stroke-width:2.2; }
+svg.chart .cn.trail .dot{ opacity:1; fill:var(--spark); stroke:var(--spark); stroke-width:2.5; }
+svg.bip2 .bn.trail .bdot{ opacity:1; fill:var(--spark); }
 svg.chart .pn.trail .pl,svg.chart .cn.trail .cl,
 svg.bip2 .bn.trail .blab,svg.mx .ml.trail .mt{ fill:var(--ink-soft); }
 
