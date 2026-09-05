@@ -485,3 +485,11 @@ body.netpage svg.chart,body.netpage svg.mx{ margin:0 auto; }
 .themes button[aria-pressed="true"]{ outline:1.5px solid var(--ink); outline-offset:2px; }
 .themes button:focus-visible{ outline:2px solid var(--ink); outline-offset:2px; }
 @media (max-width:600px){ .themes{ right:8px; bottom:8px; } .themes .lbl{ display:none; } }
+
+/* ---- experiments listing ---- */
+.run{ padding:17px 0 18px; border-bottom:1px solid var(--rule-soft); max-width:64ch; }
+.run .rt{ font-family:var(--serif); font-size:19px; line-height:1.35; margin:0; }
+.run .rt a{ color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule); }
+.run .rt a:hover{ border-bottom-color:var(--ink); }
+.run .rn{ font-family:var(--sans); font-size:13px; line-height:1.6; color:var(--ink-soft);
+  margin:7px 0 0; }
